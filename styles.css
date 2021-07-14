@@ -119,6 +119,22 @@ a {
 }
 
 
+/* highlights videos start */
+
+.videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 158px;
+}
+
+.videos iframe {
+    width: 60%;
+    height: 500px;
+    border: none;
+}
+
+
 /* footer styles */
 
 .footer-content {
@@ -183,7 +199,18 @@ a {
     /* players started */
     .players {
         grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 50px;
     }
+    /* highlights section */
+    .videos {
+        margin-bottom: 50px;
+    }
+    .videos iframe {
+        width: 90%;
+        height: 300px;
+        border: none;
+    }
+    /* footer section */
     .footer-content {
         flex-direction: center;
     }
@@ -222,5 +249,14 @@ a {
     }
     .players {
         grid-template-columns: repeat(2, 1fr);
+    }
+    /* highlights section */
+    .videos {
+        margin-bottom: 50px;
+    }
+    .videos iframe {
+        width: 90%;
+        height: 400px;
+        border: none;
     }
 }
