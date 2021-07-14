@@ -1,0 +1,226 @@
+/* common styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* header styles */
+
+.banner {
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    padding: 67px 141px 86px 156px;
+}
+
+.banner-info {
+    width: 485px;
+    margin-right: 102px;
+}
+
+.banner-title {
+    color: #FFFFFF;
+    font-size: 64px;
+    width: 485px;
+    line-height: 80px;
+}
+
+.link-button {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    transition: background-color linear 0.5s;
+}
+
+.link-button:hover {
+    background-color: black;
+}
+
+.banner-image img {
+    width: 556.01px;
+    height: 438px;
+    padding-top: 153px;
+    padding-bottom: 86px;
+    cursor: pointer;
+}
+
+.banner-image:hover {
+    transform: scale(1.1);
+    transition: transform 3s ease-in-out 0.3s;
+}
+
+
+/* main section style */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px;
+    margin-bottom: 158px;
+}
+
+.player {
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    padding: 15px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-image img {
+    width: 300px;
+    height: 256px;
+    margin: auto;
+}
+
+.player-info {
+    width: 300px;
+}
+
+.player-name {
+    color: #18191F;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.player-info .player-details {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+}
+
+
+/* footer styles */
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 57px;
+}
+
+.footer-logo img {
+    width: 484px;
+    margin-bottom: 20px;
+}
+
+.social-media-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-account .social-media {
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+    color: gray;
+    background-color: rgba(128, 128, 128, 0.274);
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+}
+
+
+/* Responsive Media Queries */
+
+
+/* Mobile devices */
+
+@media only screen and (max-width:688px) {
+    .banner {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 46px 16px 61px 15px;
+    }
+    .banner-info {
+        width: 278px;
+    }
+    .banner-title {
+        font-size: 36px;
+        line-height: 50px;
+        width: 278px;
+    }
+    .banner-image img {
+        padding-top: 50px;
+        padding-bottom: 0;
+        width: 329px;
+        height: 260px;
+    }
+    /* players started */
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-content {
+        flex-direction: center;
+    }
+    .footer-logo img {
+        width: 276px;
+    }
+}
+
+
+/* tablet device */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .banner {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 46px 26px 61px 15px;
+    }
+    .banner-info {
+        width: 280px;
+        margin-right: 50px;
+    }
+    .banner-title {
+        font-size: 40px;
+        line-height: 50px;
+        width: 278px;
+    }
+    .banner-image img {
+        padding-top: 50px;
+        padding-bottom: 0;
+        width: 329px;
+        height: 260px;
+    }
+    .banner-image img:hover {
+        transform: scale(1.1);
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
